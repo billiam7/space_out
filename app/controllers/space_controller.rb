@@ -6,6 +6,8 @@ class SpaceController < ApplicationController
   @daily_image_url = Nasa.image
 
   @quote = Quote.content
+
+  @title = Title.title
   end
 
 
