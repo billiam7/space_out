@@ -3,17 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Space Out</title>
+<<<<<<< HEAD
     <script src="https://use.fontawesome.com/1569c93a06.js"></script>
   </head> -->
   <!-- <body> -->
     <iframe src="https://embed.spotify.com/?uri=spotify:user:t1310:playlist:5MVfrynGEanhTozPba4OcK" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
     <!-- <img src="<%= @daily_image_url %>" alt="nasa picture"> -->
+=======
+
+  </head>
+  <body> -->
+
+>>>>>>> 4a692917cbff9da73df7a65b13f893a4c43efdfc
 
     <img class="bg" src="<%=  @daily_image_url %>" alt="nasa image of space">
 
     <div style="background:transparent" class="jumbotron jumbotron-fluid">
       <div style="background:transparent" class="container">
-        <h2 style="color:lightgrey"><%= strip_tags  @quote %></h2>
+        <h2 class="scaling floating " style="color:lightgrey"><%= strip_tags  @quote %></h2>
 
 
         <p style="color:lightgrey"><%= strip_tags @title %></p>
@@ -22,10 +29,20 @@
         href="https://twitter.com/intent/tweet?text=<%="#{strip_tags @quote}"%>"
         data-size="large">
         <i class="fa fa-twitter" aria-hidden="true" fa-5x></i> Tweet</a>
+
         </div>
     </div>
+<<<<<<< HEAD
 
   <!-- </body>
+=======
+    <div class="iframe">
+      <iframe src="https://embed.spotify.com/?uri=spotify:user:t1310:playlist:5MVfrynGEanhTozPba4OcK" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+      <!-- <img src="<%= @daily_image_url %>" alt="nasa picture"> -->
+    </div>
+  </body>
+
+>>>>>>> 4a692917cbff9da73df7a65b13f893a4c43efdfc
 </html>
 
 </div> -->
