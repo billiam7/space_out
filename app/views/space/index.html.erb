@@ -9,31 +9,28 @@
     <div style="background:transparent" class="jumbotron jumbotron-fluid">
       <div style="background:transparent" class="container text-center">
         <h1 id="time" style="color:lightgrey"><%= @time %></h1>
-        <h4 class="" style="color:lightgrey"><%= strip_tags  @quote %></h4>
+        <div class="floating">
+          <h4 class="text-center" style="color:lightgrey"><%= strip_tags  @quote %></h4>
+        </div>
 
 
-        <p style="color:lightgrey"><%= strip_tags @title %></p>
 
+
+        <div style="background:transparent" class="container text-center">
         <a class="twitter-share-button"
         href="https://twitter.com/intent/tweet?text=<%="#{strip_tags @quote}"%>"
         data-size="large">
         <i class="fa fa-twitter fa-2x" aria-hidden="true"></i> Tweet</a>
-
+        </div>
 
         </div>
 
     </div>
 
 
-    <div style="background:transparent" class="container pull-right">
-      <iframe class="pull-right" src="https://embed.spotify.com/?uri=spotify:user:t1310:playlist:5MVfrynGEanhTozPba4OcK" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-      <!-- <img src="<%= @daily_image_url %>" alt="nasa picture"> -->
+    <div style="background:transparent"  class="container jumbotron center-block clearfix">
     </div>
-    <div style="background:transparent"  class="container center-block clearfix">
-
-
-
-  </div>
+  <!-- Login area -->
   <div style="background:transparent " class="container text-center">
 
 
@@ -44,9 +41,23 @@
 
   <% end %>
 </div>
+
+
+
+<!-- background picture title -->
+<div style="background:transparent " class="container">
+
     <!-- Button trigger modal -->
-
-
+    <!-- Music player -->
+    <div style="background:transparent" class="container pull-right">
+      <iframe class="pull-right" src="https://embed.spotify.com/?uri=spotify:user:t1310:playlist:5MVfrynGEanhTozPba4OcK" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+    </div>
+    <div class="row force-to-bottom">
+    <div style="background:transparent " style="position:absolute;bottom:5px;right:5px;margin:0;padding:5px 3px;" class="container pull-left">
+      <p style="color:lightgrey"><%= strip_tags @title %></p>
+    </div>
+</div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
