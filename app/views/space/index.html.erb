@@ -1,16 +1,19 @@
+
 <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, class: "alert alert-info" %>
   <% end %>
 
+
     <img class="bg" src="<%=  @daily_image_url %>" alt="nasa image of space">
 
     <div style="background:transparent" class="jumbotron jumbotron-fluid">
-      <div style="background:transparent" class="container">
-        <h2 class="scaling floating " style="color:lightgrey"><%= strip_tags  @quote %></h2>
+      <div style="background:transparent" class="container text-center">
+        <h1 id="time" style="color:lightgrey"><%= @time %></h1>
+        <h4 class="" style="color:lightgrey"><%= strip_tags  @quote %></h4>
 
 
         <p style="color:lightgrey"><%= strip_tags @title %></p>
-        <p style="color:lightgrey"><%= @time %></p>
+
         <a class="twitter-share-button"
         href="https://twitter.com/intent/tweet?text=<%="#{strip_tags @quote}"%>"
         data-size="large">
@@ -21,17 +24,25 @@
     </div>
 
 
-    <div class="iframe">
-      <iframe src="https://embed.spotify.com/?uri=spotify:user:t1310:playlist:5MVfrynGEanhTozPba4OcK" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+    <div style="background:transparent" class="container pull-right">
+      <iframe class="pull-right" src="https://embed.spotify.com/?uri=spotify:user:t1310:playlist:5MVfrynGEanhTozPba4OcK" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
       <!-- <img src="<%= @daily_image_url %>" alt="nasa picture"> -->
     </div>
-    <% if current_user %>
-      Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-    <% else %>
-      <%= render "sessions/form" %>
+    <div style="background:transparent"  class="container center-block clearfix">
 
-    <% end %>
 
+
+  </div>
+  <div style="background:transparent " class="container text-center">
+
+
+  <% if current_user %>
+    <h4 style="color:lightgrey">Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %></h4>
+  <% else %>
+    <%= render "sessions/form" %>
+
+  <% end %>
+</div>
     <!-- Button trigger modal -->
 
 
