@@ -11,15 +11,19 @@ class SessionsController < ApplicationController
         # logged in when they navigate around our website.
         session[:user_id] = user.id
         redirect_to '/'
+        flash[:notice] = "Login successful!"
+
       else
       # If user's login doesn't work, send them back to the login form.
-        redirect_to '/login'
+        redirect_to '/'
+        flash[:notice] = "Login unsuccessful.  Please try again."
+
       end
     end
 
     def destroy
      session[:user_id] = nil
-     redirect_to '/login'
+     redirect_to root_path
    end
 
 end
