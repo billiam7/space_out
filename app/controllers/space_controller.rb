@@ -1,7 +1,7 @@
 
 
 class SpaceController < ApplicationController
-   before_filter :authorize
+  #  before_filter :authorize
   def index
 
   @daily_image_url = Nasa.image
@@ -10,7 +10,7 @@ class SpaceController < ApplicationController
 
   @title = Title.title
 
-  @time = Time.now.strftime("%I:%M%p") 
+  @time = Time.now.strftime("%I:%M%p")
   end
 
 

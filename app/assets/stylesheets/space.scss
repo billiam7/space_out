@@ -93,3 +93,49 @@ img.bg {
         65% {-moz-transform: scale(1.0);}
         to {-moz-transform: scale(0.9);}
     }
+
+    .login-forms {
+        background-color: rgba(0,0,0,0.7);
+        width: 42em;
+        height: 16em;
+        text-align: center;
+        color: white;
+        border-radius: 0.5em;
+
+    }
+
+.home-login input {
+  background-color: #22A7F0;
+  border: 0;
+  border-radius: 0.25em;
+  color: white;
+  font-family: "Open Sans";
+  padding-right: 0.75em;
+  margin-left: 0.5em;
+}
+
+.form-group {
+  color: black;
+}
+
+// .modal-dialog {
+//   border-radius: 8px;
+//   color: white;
+//   background-color: rgba(0, 0, 0, 0.7);
+// }
+
+div.modal-content {
+  border-radius: 8px;
+  color: white;
+  background-color: rgba(0,0,0,0.7);
+}
+
+input#email {
+  border-radius: 8px;
+  padding-left: 1rem;
+}
+
+input#password {
+  border-radius: 8px;
+  padding-left: 1rem;
+}
