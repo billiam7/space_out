@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def new
+
   end
 
   def create
@@ -8,7 +9,8 @@ class UsersController < ApplicationController
      session[:user_id] = user.id
      redirect_to '/'
    else
-     redirect_to '/signup'
+    redirect_to '/'
+    flash[:notice] = "Login unsuccessful.  Please try again or signup."
    end
   end
 
@@ -17,5 +19,5 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
-   
+
 end

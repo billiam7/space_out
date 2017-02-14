@@ -10,7 +10,7 @@ class SpaceController < ApplicationController
 
   @title = Title.title
 
-  @time = Time.now.strftime("%I:%M%p")
+  @time = Time.now.strftime("%I:%M %p")
   end
 
 
