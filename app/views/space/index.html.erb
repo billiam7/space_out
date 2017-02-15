@@ -14,13 +14,18 @@
 <!-- QUOTE -->
 <div class="floating">
   <div style="background:transparent" class="text-center container">
-    <h4 class="text-center" style="color:lightgrey"><%= strip_tags  @quote %><a class="twitter-share-button"
+    <h4 class="text-center" style="color:lightgrey"><%= strip_tags  @quote %></h4>
+
+  </div>
+</div>
+<!-- TWITTER -->
+
+  <div style="background:transparent" class="text-center container">
+    <a class="twitter-share-button"
     href="https://twitter.com/intent/tweet?text=<%="#{strip_tags @quote}"%>"
     data-size="large">
     <i class="fa fa-twitter fa-2x" aria-hidden="true"></i> Tweet</a></h4>
   </div>
-</div>
-<!-- TWITTER -->
 
 <!-- </div> -->
 </div>
@@ -33,7 +38,7 @@
 
 
   <% if current_user %>
-  <h4 style="color:lightgrey">Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %></h4>
+  <h4 style="color:lightgrey">How are you doing today <%= current_user.name %> ? | <%= link_to "Logout", '/logout' %></h4>
   <% else %>
   <%= render "sessions/form" %>
 
