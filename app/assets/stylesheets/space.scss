@@ -26,11 +26,14 @@ img.bg {
    background-color: none;
 }
 .jumbotron-fluid {
-  //  background: rgb(200, 54, 54); /* This is for ie8 and below */
-  //  background: rgba(200, 54, 54, 0.5);
-   background: none;
-       background-color: none;
+  // background: none;
+  // background-color: none;
+  // position: relative;
+  // top: 40vh;
+  // margin-top: 5rem;
+
 }
+
 .container {
    background: rgb(200, 54, 54); /* This is for ie8 and below */
    background: rgba(200, 54, 54, 0.5);
@@ -50,6 +53,7 @@ img.bg {
     -moz-animation-timing-function: ease-in-out;
     margin-left: 30px;
     margin-top: 5px;
+    padding-bottom: 5rem;
 
 }
 
@@ -114,11 +118,6 @@ img.bg {
   color: black;
 }
 
-// .modal-dialog {
-//   border-radius: 8px;
-//   color: white;
-//   background-color: rgba(0, 0, 0, 0.7);
-// }
 
 div.modal-content {
   border-radius: 8px;
@@ -141,6 +140,25 @@ input[type="submit"] {
   font-family: "Open Sans";
 }
 
-iframe {
-  border-radius: 8px;
+
+.spotify-div {
+  position: absolute;
+  top: 83vh;
+  left: 70vw;
+  padding: 1rem;
+  height: 10rem;
+  border-radius: 20px;
+}
+
+.picture-title {
+  position: absolute;
+  top: 90vh;
+  padding: 1rem;
+  height: 100%
+}
+
+input[type="submit"] {
+    color: white;
+    height: 28px;
+    font-family: Helvetica, Arial, sans-serif;
 }
